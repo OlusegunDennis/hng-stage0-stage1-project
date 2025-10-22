@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — HNG Stage 1</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyProfile</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main" id="main" tabindex="-1">
+    <h1 class="page-title">Contact Us</h1>
+
+    <section class="contact-section" aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Send a message</h2>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Your full name" data-testid="test-contact-name" required aria-describedby="error-fullName">
+          <p class="form-error" id="error-fullName" data-testid="test-contact-error-fullName" aria-live="assertive"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" data-testid="test-contact-email" required aria-describedby="error-email">
+          <p class="form-error" id="error-email" data-testid="test-contact-error-email" aria-live="assertive"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Subject" data-testid="test-contact-subject" required aria-describedby="error-subject">
+          <p class="form-error" id="error-subject" data-testid="test-contact-error-subject" aria-live="assertive"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write at least 10 characters" data-testid="test-contact-message" required aria-describedby="error-message"></textarea>
+          <p class="form-error" id="error-message" data-testid="test-contact-error-message" aria-live="assertive"></p>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="submit-btn" data-testid="test-contact-submit">Send message</button>
+        </div>
+
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite" data-testid="test-contact-success" hidden>Thanks — your message was sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="index.html" class="button-link">Back to profile</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

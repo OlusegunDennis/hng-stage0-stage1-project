@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile HNG Stage 0</title>
+
+  <!-- Google font (modern, professional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyProfile</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main" id="main" tabindex="-1">
+    <article class="profile-card" data-testid="test-profile-card" aria-label="User profile">
+      <figure class="profile-figure" aria-hidden="false">
+        <img src="assets/my-pic.jpeg"
+             alt="User avatar"
+             width="160"
+             height="160"
+             class="profile-avatar"
+             data-testid="test-user-avatar">
+        <figcaption class="visually-hidden">User profile picture</figcaption>
+      </figure>
+
+      <div class="profile-content">
+        <header class="profile-header">
+          <h2 class="profile-name" data-testid="test-user-name">OLUSEGUN DENNIS</h2>
+          <p class="profile-bio" data-testid="test-user-bio">
+            Passionate frontend developer focused on creating accessible and responsive web interfaces with clean code.
+          </p>
+        </header>
+
+        <section class="profile-meta" aria-labelledby="time-label">
+          <p class="profile-time-label" id="time-label">Rendered time (ms): <span id="time" data-testid="test-user-time" aria-live="polite">0</span></p>
+        </section>
+
+        <nav class="profile-social" aria-label="Social links" data-testid="test-user-social-links">
+  <ul class="social-list">
+    <li>
+      <a href="https://x.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+        X
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="https://dennis-technology.netlify.app/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-portfolio">
+        Portfolio
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+        <section class="profile-lists">
+          <section aria-labelledby="hobbies-heading" class="hobbies-section">
+            <h3 id="hobbies-heading">Hobbies</h3>
+            <ul class="hobbies-list" data-testid="test-user-hobbies">
+              <li>Design systems</li>
+              <li>Reading technical blogs</li>
+              <li>Open-source contribution</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="dislikes-heading" class="dislikes-section">
+            <h3 id="dislikes-heading">Dislikes</h3>
+            <ul class="dislikes-list" data-testid="test-user-dislikes">
+              <li>Unlabeled images</li>
+              <li>Poor contrast</li>
+              <li>Missing keyboard focus</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Dennis-O HNG Stage 0 & 1 task</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
